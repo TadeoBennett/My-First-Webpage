@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+  <style>
+    body {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 90%;
+    color: #666;
+    background-color: #f8f8f8;
+}
+
+fieldset {
+    width: 500px;
+    margin-top: 20px;
+    border: 1px solid #d6d6d6;
+    background-color: #ffffff;
+    line-height: 1.6em;
+}
+
+.title {
+  float: left;
+  width: 160px;
+}
+
+input[type="text"] {
+  width: 200px;
+  border: 1px solid #d6d6d6;
+  padding: 2px;
+  outline: none;
+}
+
+/* -------------------------------------------- */
+
+li{
+  display: inline;
+  list-style-type: none;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+ul{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 20px;
+}
+
+li:hover{
+  background-color: black;
+  color: white;
+  transition: 0.4s ease;
+}
+  </style>
+</head>
+<body>
+  <ul style="display: block;">
+    <li>Home</li>
+    <li>Contact</li>i
+    <li>About</li>
+  </ul>
+
+  
+  <form action="http://www.example.com/form.php" method="get">
+    <fieldset>
+      <legend>Register your interest</legend>
+      <p><label class="title" for="name">Your name:</label>
+        <input type="text" name="name" id="name"><br>
+        <label class="title" for="email">Your email:</label>
+        <input type="text" name="email" id="email">
+      </p>
+      <p><label for="location" class="title">Your closest center:</label>
+        <select name="location" id="location">
+          <option value="ny">New York</option>
+          <option value="il">Chicago</option>
+          <option value="ca">San Francisco</option>
+        </select>
+      </p>
+      <span class="title">Are you a member?</span>
+      <label><input type="radio" name="member" value="yes"> Yes</label>
+      <label><input type="radio" name="member" value="no"> No</label>
+      <p></p>
+    </fieldset>
+    <div class="submit"><input type="submit" value="Register"></div>
+  </form>
+</body>
+</html>

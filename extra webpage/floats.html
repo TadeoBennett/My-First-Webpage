@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Float Property</title>
+  <style>
+    p {
+      width: 350px;
+      float: left;
+      margin: 10px;
+      text-align: justify;
+    }
+
+    /* this class and its property given allows for the fourth paragraph to not be joined to the third paragraph on the same line(which has space below the third paragraph). Instead the clear property, as stated makes sure no element is touching it on the left and instead puts it on the next line.*/
+    .fourth {
+      clear: left;
+    }
+
+    div{
+      border: 2px solid blue;
+      overflow: auto;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, labore esse odit neque dolore ad unde placeat
+      ducimus voluptas, cupiditate optio dolorem corrupti sequi eligendi.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, exercitationem vel asperiores labore, fuga eos ae,
+      autem voluptatum quisquam dolor, ullam mollitia quaerat, enim perfere</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, similique?</p>
+
+    <p class="fourth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, iste.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, atque.</p>
+  </div>
+</body>
+
+</html>

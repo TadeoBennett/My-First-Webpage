@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Extras</title>
+</head>
+
+<body>
+  <a href="../index.html">Back to Home Page</a>
+  <h3>Table</h2>
+    <table style="background-color: skyblue; border: 4px solid; border-color: purple;">
+      <thead>
+        <tr>
+          <th></th>
+          <th scope="col">Home Starter Hosting</th>
+          <th scope="col">Premium Business Hosting</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Disk Space</th>
+          <td>250mb</td>
+          <td>1gb</td>
+        </tr>
+        <tr>
+          <th scope="row">Bandwidth</th>
+          <td>5gb per month</td>
+          <td>50gb per month</td>
+        </tr>
+        <tr>
+          <th scope="row">Email Accounts</th>
+          <td>3</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <th scope="row">Server</th>
+          <td>Shared</td>
+          <td>VPS</td>
+        </tr>
+        <tr>
+          <th scope="row">Support</th>
+          <td>Email</td>
+          <td>Telephone and Email</td>
+        </tr>
+        <tr>
+          <th scope="row">Setup</th>
+          <td>Free</td>
+          <td>Free</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td colspan="2">Sign up now and save 10%!
+          <th>
+        </tr>
+      </tfoot>
+    </table>
+    <br>
+
+    <!-- Sample Form -->
+    <div>
+      <form action="" method="" id="mainform"></form>
+      <fieldset>
+        <legend>Sample Form</legend>
+        <!-- ------------------------------------------------------>
+        <!-- Text boxes -->
+        <label>First Name <input type="text" id="fname" name="firstname" maxlength="30" size="20"
+            placeholder="Enter first name"></label>
+        <br><br>
+        <label for="lname">Last Name </label>
+        <input type="text" id="lname" name="lastname" maxlength="30" size="20" placeholder="Enter last name">
+        <br><br>
+        <label>Your Country<input placeholder="enter a country name" type="text"></label>
+        <br><br>
+        <p>Street Address:
+          <!--Does not have a label-->
+          <input type="text" name="address" maxlength="30" size="20" placeholder="Enter street address">
+        </p>
+        <!-- ------------------------------------------------------>
+
+        <!-- Radio Buttons -->
+        <p> What is your favorite coding language? <br>
+          <input type="radio" name="coding" value="C++"> C++
+          <input type="radio" name="coding" value="Python"> Python
+          <input checked="checked" type="radio" name="coding" value="HTML"> HTML
+          <input type="radio" name="coding" value="None"> Not mentioned
+          <br><br>
+
+          <!-- Drop Down List Box/ Select Box -->
+          Which of the following coding languages are you familiar with?<br>
+          <select name="familiarity" multiple="mulitple">
+            <option value="C++">C++</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="Javascript">Javascript</option>
+            <option selected="selected" value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="PHP">PHP</option>
+          </select>
+        </p>
+
+        Submit a coding project that you are most proud of doing.
+        <input type="file" name="userfile" id="file">
+        <br><br>
+
+        <input type="submit" value="Submit"> or click on the image below. <br><br>
+
+        <input type="image" src="/images/miscellaneous/Submit-Button.jpg" width="115" height="40">
+      </fieldset>
+    </div>
+    <br>
+
+    <h2>Here is one of my most viewed Youtube uploads</h2>
+    <br>
+    <div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/C8_0qs_mApg" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+</body>
+
+</html>
